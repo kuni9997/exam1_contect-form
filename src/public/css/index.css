@@ -1,0 +1,191 @@
+/* テスト用ボタン */
+.test {
+    position: absolute;
+}
+
+label {
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #a5a5a5;
+    margin-top: 1rem;
+}
+
+input {
+    border-radius: 10px;
+    padding:0.5rem;
+    font-size: 1vw;
+}
+
+
+span{
+    color:red;
+    margin: 0;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+}
+
+.error p{
+    margin:0;
+    padding: 0.5rem;
+    color: #e64b4b;
+}
+
+.form-item{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    /* margin-left: 50vw;
+    transform: translateX(-40%); */
+}
+
+/* 名前入力欄 */
+.form-item__name{
+    display: flex;
+    width:100%;
+}
+
+.form-item__name__input {
+    display: flex;
+    margin-left: 5vw;
+}
+
+.form-item__first-name__input{
+    margin-left:3%;
+}
+
+.form-item__name-example{
+    display: flex;
+    margin-left: 5vw;
+}
+
+.form-item__first-name__example{
+    margin-left: 11.5vw;
+}
+
+/* 性別チェックボックス */
+.form-item__gender{
+    display: flex;
+    width:100%;
+    margin-top: 3vh;
+}
+
+.form-item__gender__input{
+    margin-left: 7vw;
+}
+
+.form-item__gender__input input:nth-child(3) {
+    margin-left:3vw;
+}
+
+.form-item__gender__input input{
+    transform:scale(3.0);
+}
+
+.gender-label {
+    font-weight: 100;
+    margin-left: 1vw;
+}
+
+/* Eメール入力欄 */
+.form-item__email {
+    display: flex;
+    width:100%;
+    margin-top: 3vh;
+}
+
+.form-item__email__input {
+    margin-left: 0.9vw;
+}
+.form-item__email__input--input {
+    font-size: 1vw;
+    width: 28vw;
+}
+
+/* 郵便番号 */
+.form-item__postcode {
+    display: flex;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.form-item__postcode__input{
+    margin-left: 3.7vw;
+}
+
+.form-item__postcode__input--input {
+    font-size: 1vw;
+    width: 27vw;
+}
+
+/* 住所 */
+.form-item__address{
+    display: flex;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.form-item__address__input{
+    margin-left: 6vw;
+}
+
+.form-item__address__input--input {
+    font-size: 1vw;
+    width: 28vw;
+}
+
+/* 建物名 */
+.form-item__building_name{
+    display: flex;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.form-item__building_name__input{
+    margin-left: 6vw;
+}
+
+
+/* ご意見 */
+.form-item__text {
+    display: flex;
+    width:100%;margin-top: 3vh;
+
+}
+
+.form-item__text__input{
+    margin-left: 5vw;
+}
+
+.form-item__text__input--input {
+    font-size: 1vw;
+    width: 28vw;
+    height: 10vh;
+    resize:none;
+    border-radius: 10px;
+}
+
+/* 確認ボタン */
+.form-item__button {
+    display: flex;
+    justify-content: center;
+}
+.form-item__button input {
+    font-size:1rem;
+    padding: 0.5vw 2vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-top:3vh;
+}

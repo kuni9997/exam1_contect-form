@@ -1,0 +1,254 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 5vw;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 0.5%;
+    margin-left: 6vw;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    border:2px solid black;
+    width: 90%;
+    height: 45vh;
+}
+
+.form-content {
+    width: 100%;
+}
+
+.form-content__item {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content__item--input {
+    width: 100%;
+}
+
+/* 名前・性別 */
+.form-content__item--name-gender {
+    display: flex;
+    margin:2%;
+}
+
+.form-content__item-date {
+    display: flex;
+}
+
+.form-content__item-name {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+
+.form-content__item-gender {
+    display: flex;
+    align-items: center;
+}
+
+.form-content__item-gender div {
+    display: flex;
+    align-items: center;
+}
+
+.form-content__item-gender input {
+    width: auto;
+    margin-left: 2vw;
+    transform: scale(2);
+}
+
+.form-content__item-gender label {
+    width: auto;
+    margin-left: 1vw;
+}
+
+
+.form-content__item-gender--header {
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 5vw;
+}
+
+
+/* 登録日 */
+.form-content__item-date{
+    display: flex;
+    align-items: center;
+    margin:2%;
+}
+
+.form-content__item-date--text {
+    font-size: 1.2rem;
+    margin-left: 2vw;
+}
+
+.form-content__item-date--end {
+    margin-left: 2vw;
+}
+/* メールアドレス */
+.form-content__item-email{
+    display: flex;
+    margin:2%;
+}
+.form-content__item-email label {
+    width: 8vw;
+}
+
+.form-content__item-email input {
+    margin-left: 3vw;
+}
+.form-data {
+    width: 90%;
+}
+
+/* 操作ボタン */
+.form-content__item-button{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.form-content__item-button--search{
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    width:12vw;
+    margin-left: 0;
+    font-size: 1.2rem;
+}
+
+.form-content__item-button--reset {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    padding: 1px;
+    margin-top: 1vh;
+    font-size: 1rem;
+    margin-left: 0;
+    width: fit-content;
+    border-radius: 0;
+}
+
+/* ページネーション */
+svg {
+    width: 15%;
+    padding-right: 0;
+}
+
+
+.MyPagination {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.MyPagination__number {
+    width: 10%;
+}
+
+/* データベース表示 */
+th {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+}
+
+.form-data__table--header{
+    width:100%;
+    border-bottom: 2px solid black;
+
+}
+.form-data__table--contact input{
+    border: none;
+    font-size: 1.2rem;
+    margin: 0;
+
+
+}
+
+.form-data__table--button {
+    padding: 0vw 1vw;
+    border-radius: 10%;
+    color: white;
+    background-color: black;
+    width: 4vw;
+    height: 2%;
+    font-size: 1rem;
+    padding-bottom: 0;
+}
+
+.form-data__table--id {
+    width: 5vw;
+}
+
+.form-data__table--fullname {
+    width: 10vw;
+}
+
+.form-data__table--gender {
+    width: 10vw;
+}
+
+.form-data__table--email {
+    width: 20vw;
+}
+
+.form-data__table--opinion {
+    width: 30vw;
+}
+
+/* マウスオーバー用 */
+
+.form-data__table--mask {
+    position: relative;
+}
+.form-data__table--opinion--hover{
+    width:100%;
+    height: 200%;
+    position: absolute;
+    overflow:visible;
+    top:0;
+    left:0;
+    z-index: 10;
+    background-color: #c4b9ff;
+    opacity: 0;
+    border: 1px solid black;
+}
+
+.form-data__table--opinion--hover:hover {
+    opacity: 1;
+}
+
+.form-data__table_td--button{
+    padding-left: 10vw;
+}
