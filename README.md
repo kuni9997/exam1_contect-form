@@ -2,6 +2,7 @@
 
 #アプリケーション名
 お問い合わせフォーム
+<img width="497" alt="フォームイメージ" src="https://user-images.githubusercontent.com/92093565/236382782-39005a7f-4112-45f5-8ebf-fa6b5fddf7d6.png">
 
 
 ##作成した目的
