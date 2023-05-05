@@ -8,9 +8,30 @@
 ##作成した目的
 教材内容の理解確認テスト
 
-##昨日一覧
+##アプリケーションURL
+お問い合わせフォーム入力画面：localhost/
+お問い合わせフォーム内容確認画面：localhost/confirmaition
+Thanksページ：localhost/tanks
+データ管理画面：localhost/data
+
+テスト用お問い合わせフォーム入力画面：localhost/test
+→本番用との変更点：フォーム自動入力ボタンを追加※保存先DBは本番環境と同じ
+
+##機能一覧
 お問い合わせフォーム（ルート：localhost/）
-→入力内容をdb:contactsに保存
+→入力内容をDB:contactsに保存
 
 データ管理画面（ルート：localhost/data）
-→db内のカラムを検索できる
+→入力内容からdb内のカラムを検索
+→削除ボタンからカラムを削除
+
+##使用技術（実行環境）
+下記記載例　使用サービス；バージョン情報
+・Laravel Framework:8.83.8
+・nginx:1.21.1
+・mysql:8.0.26
+・Docker Engine - Community　:20.10.23
+
+##テーブル設計
+
+
