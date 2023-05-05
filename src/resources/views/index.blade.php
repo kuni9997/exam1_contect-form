@@ -10,12 +10,6 @@
 
 
 @section('content')
-<!-- <div class="test">
-    <form action="/test" class="test_button" method="post">
-        @csrf
-        <button type="submit">テスト用挿入</button>
-    </form>
-</div> -->
 <div class="form">
     <form action="/confirmation" method="post" class="form-item">
         @csrf

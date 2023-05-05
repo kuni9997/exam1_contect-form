@@ -7,6 +7,11 @@ use App\Models\Contact;
 
 class TestController extends Controller
 {
+
+    public function testIndex()
+    {
+        return view('index_test');
+    }
      public function testValue(Request $request)
      {
         $request->session()->put([
@@ -21,7 +26,7 @@ class TestController extends Controller
             ]
         ]);
 
-        return redirect('/');
+        return redirect('/test');
      }
 
      public function echo()

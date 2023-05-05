@@ -30,5 +30,6 @@ Route::post('/search', [DataController::class, 'search']);
 Route::delete('/down', [DataController::class, 'destroy']);
 
 // テスト用
+Route::get('/test', [TestController::class, 'testIndex']);
 Route::post('/test', [TestController::class, 'testValue']);
 Route::get('/echo', [TestController::class, 'echo']);

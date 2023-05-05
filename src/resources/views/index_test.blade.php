@@ -10,6 +10,12 @@
 
 
 @section('content')
+<div class="test">
+    <form action="/test" class="test_button" method="post">
+        @csrf
+        <button type="submit">テスト用挿入</button>
+    </form>
+</div>
 <div class="form">
     <form action="/confirmation" method="post" class="form-item">
         @csrf
@@ -21,7 +27,7 @@
                 <div class="form-item__name-content">
                     <div class="form-item__name__input">
                         <div class="form-item__last-name__input">
-                            <input type="text" name="last-name" id="last-name" value="{{ old('last-name',$data['last-name']??'' )}}" class="form-item__last-name__input--input">
+                            <input type="text" name="last-name" id="last-name" value="{{ old('last-name') }}" class="form-item__last-name__input--input">
                             @if($errors->has('last-name'))
                                 <div class="error">
                                     <div class="error-message__name">
@@ -37,7 +43,7 @@
                             @endif
                         </div>
                         <div class="form-item__first-name__input">
-                            <input type="text" name="first-name" value="{{ old('first-name',$data['-name']??'') }}" class="form-item__first-name__input--input">
+                            <input type="text" name="first-name" value="{{ old('first-name') }}" class="form-item__first-name__input--input">
                         </div>
                     </div>
                     <div class="form-item__name-example">
@@ -49,14 +55,21 @@
             <div class="form-item__gender">
             <label for="" class="form-item__gender--label">性別<span>※</span></label>
                 <div class="form-item__gender__input">
-                    <input type="radio" name="gender" value="male" checked="checked" class="form-item__gender__input--input"><label class="gender-label">男性</label>
-                    <input type="radio" name="gender" value="female" class="form-item__gender__input--input"><label class="gender-label">女性</label>
+                @if(old('gender')==2)
+                    <input type="radio" name="gender" value="1"class="form-item__gender__input--input">
+                    <label class="gender-label">男性</label>
+                    <input type="radio" name="gender" value="2"  checked="checked" class="form-item__gender__input--input"><label class="gender-label">女性</label>
+                @else
+                    <input type="radio" name="gender" value="1" checked="checked" class="form-item__gender__input--input">
+                    <label class="gender-label">男性</label>
+                    <input type="radio" name="gender" value="2" class="form-item__gender__input--input"><label class="gender-label">女性</label>
+                @endif
                 </div>
             </div>
             <div class="form-item__email">
                 <label  class="form-item__email--label">メールアドレス<span>※</span></label>
                 <div class="form-item__email__input">
-                    <input type="email" name="email" value="{{ old('email',$data['email']??'') }}" class="form-item__email__input--input">
+                    <input type="email" name="email" value="{{ old('email') }}" class="form-item__email__input--input">
                     @error('email')
                     <div class="error">
                         <div class="error-message__name">
@@ -71,7 +84,7 @@
                 <label  class="form-item__postcode--label">郵便番号<span>※</span></label>
                 <div class="form-item__postcode__input">
                     <label class="postcode__label">〒</label>
-                    <input type="text" name="postcode" value="{{ old('postcode',$data['postcode']??'') }}" class="form-item__postcode__input--input">
+                    <input type="text" name="postcode" value="{{ old('postcode') }}" class="form-item__postcode__input--input">
                     @error('postcode')
                     <div class="error">
                         <div class="error-message__name">
@@ -85,7 +98,7 @@
             <div class="form-item__address">
                 <label class="form-item__address--label">住所<span>※</span></label>
                 <div class="form-item__address__input">
-                    <input type="text" name="address" value="{{ old('address',$data['address']??'') }}" class="form-item__address__input--input">
+                    <input type="text" name="address" value="{{ old('address') }}" class="form-item__address__input--input">
                     @error('address')
                     <div class="error">
                         <div class="error-message__name">
@@ -99,14 +112,14 @@
             <div class="form-item__building_name">
                 <label for="" class="form-item__building_name--label">建物名</label>
                 <div class="form-item__building_name__input">
-                    <input type="text" name='building_name' value="{{ old('building_name',$data['building_name']??'') }}" class="form-item__building_name__input--input">
+                    <input type="text" name='building_name' value="{{ old('building_name') }}" class="form-item__building_name__input--input">
                     <p class="form-item__building_name__example">千駄ヶ谷マンション101</p>
                 </div>
             </div>
             <div class="form-item__text">
                 <label for="" class="form-item__text--label">ご意見<span>※</span></label>
                 <div class="form-item__text__input">
-                    <textarea name="opinion" class="form-item__text__input--input" >{{ old('opinion',$data['opinion']??'') }}</textarea>
+                    <textarea name="opinion" class="form-item__text__input--input" >{{ old('opinion') }}</textarea>
                     @error('opinion')
                     <div class="error">
                         <div class="error-message__name">
