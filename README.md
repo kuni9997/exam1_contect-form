@@ -33,9 +33,10 @@ Thanksページ：localhost/tanks
 ・Docker Engine - Community　:20.10.23
 
 ##テーブル設計
-https://github.com/kuni9997/exam1_contect-form/issues/2#issue-1697054067
+<img width="371" alt="データ設計" src="https://user-images.githubusercontent.com/92093565/236386554-5a757de1-a36e-46c2-b2dd-de4be6b3dafb.png">
 
 ##ER図
-https://github.com/kuni9997/exam1_contect-form/issues/3#issue-1697054709
+<img width="476" alt="ER図" src="https://user-images.githubusercontent.com/92093565/236386604-a9759405-1a5f-4217-b548-c3808d2cda6b.png">
+
 
 
