@@ -33,5 +33,9 @@ Thanksページ：localhost/tanks
 ・Docker Engine - Community　:20.10.23
 
 ##テーブル設計
+https://github.com/kuni9997/exam1_contect-form/issues/2#issue-1697054067
+
+##ER図
+https://github.com/kuni9997/exam1_contect-form/issues/3#issue-1697054709
 
 
